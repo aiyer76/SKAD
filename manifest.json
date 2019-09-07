@@ -15,7 +15,7 @@
             "48": "images/get_started48.png", 
             "128": "images/get_started128.png"
         },
-        "scripts": ["jquery-3.3.1.slim.min.js", "bootstrap.min.js", "popper.min.js"]
+        "scripts": ["jquery-3.3.1.slim.min.js", "bootstrap.min.js", "popper.min.js", "toggles.js"]
     },
     "icons": {
         "16": "images/get_started16.png",
