@@ -1,3 +1,4 @@
+/*
 let changeColor = document.getElementById('changeColor');
 
   chrome.storage.sync.get('color', function(data) {
@@ -13,3 +14,4 @@ let changeColor = document.getElementById('changeColor');
           {code: 'document.body.style.backgroundColor = "' + color + '";'});
     });
   };
+*/
