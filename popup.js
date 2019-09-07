@@ -1,6 +1,5 @@
 /*
 let changeColor = document.getElementById('changeColor');
-let findWord = document.getElementById('findWord');
 
   chrome.storage.sync.get('color', function(data) {
     changeColor.style.backgroundColor = data.color;
@@ -18,8 +17,8 @@ let findWord = document.getElementById('findWord');
   };
 <<<<<<< HEAD
 */
-=======
 
+let findWord = document.getElementById('findWord');
 // function to find a word and turn it red
 findWord.onclick = function(element) {
   var list = document.getElementsByTagName("body");
@@ -32,4 +31,3 @@ findWord.onclick = function(element) {
       + search_word + '</span>');
   }
 }
->>>>>>> kimberly
