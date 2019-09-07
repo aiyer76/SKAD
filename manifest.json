@@ -1,6 +1,10 @@
 {
     "name": "SKAD",
     "version": "1.0", 
+    "background": {
+        "scripts": ["background.js"], 
+        "persistent": false
+    },
     "description": "Bursting information bubbles", 
     "manifest_version": 2
 }
