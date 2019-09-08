@@ -4,7 +4,7 @@
     "description": "Bursting information bubbles",
     "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
     "background": {
-        "scripts": ["background.js", "aws-sdk.js"], 
+        "scripts": ["background.js"], 
         "persistent": false
     }, 
     "page_action": {
