@@ -17,12 +17,22 @@ let changeColor = document.getElementById('changeColor');
   };
 <<<<<<< HEAD
 */
+import AWS.Comprehend;
+
+var comprehendTest = new AWS.Comprehend();
+var params = {
+  LanguageCode: en | es | fr | de | it | pt, /* required */
+  Text: document.getElementsByTagName("body").toString() /* required */
+};
 
 let findWord = document.getElementById('findWord');
 // function to find a word and turn it red
 findWord.onclick = function(element) {
   var list = document.getElementsByTagName("body");
-  var search_word = "impossible";
+  var search_words = comprehendTest.detectSentiment(params, function(err, data) {
+      if (err) console.log(err, err.stack); // an error occurred
+      else     console.log(data);           // successful response
+    });
   var contents = [];
 
   for(var i = 0; i < list.length; i++){
